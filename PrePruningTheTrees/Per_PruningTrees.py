@@ -215,7 +215,7 @@ def grabTree(filename):
     fr = open(filename, 'rb')
     return pickle.load(fr)
 
-def rungo():   #运行
+if __name__ == '__main__':    #运行
     #读取数据返回矩阵
     returnMat,classLabelVector,returnMatTrain,returnMatValidation,classLabelTrain,classLabelValidation=file2matrix('datingTestSet2.txt')
     #normDataSet, ranges, minVals =  autoNorm(returnMatTrain)
